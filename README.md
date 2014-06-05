@@ -1,6 +1,6 @@
 # Interactor::Async
 
-TODO: Write a gem description
+Simple asynchronous interactors using [Sucker Punch](https://github.com/brandonhilkert/sucker_punch)
 
 ## Installation
 
@@ -18,7 +18,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Interactor Async utilizes Sucker Punch which is built using 
+[Celluloid](https://github.com/celluloid/celluloid/) actors to run jobs asychronously.
+
+```ruby
+class DoSomething
+  include Interactor::Async
+
+  def perform
+    # do something
+  end
+end
+```
 
 ## Contributing
 
